@@ -8,6 +8,8 @@ Project has a test class which represents the following scenario:
   
  Hovers page:
   * hover each avatar and verify username text appeared underneath
+ Login pages:
+  * fill in correct/ incorrect credentials and verify if the login in process is successful
 
 
 ## Prerequisites Software/Tools
@@ -21,13 +23,13 @@ Project has a test class which represents the following scenario:
 
 ## Installation/Running Tests
 
-`git clone https://github.com/violettka/herokuapp.git`
+`git clone https://github.com/katmazur/Auto.git`
 
-`cd herokuapp/`
+`cd Auto/`
 
 `mvn test`
 
 ## Contributors
 
-Violeta Abramova abramova.violetta@gmail.com
+Violeta Abramova abramova.violetta@gmail.com 
 Ekaterina Mazur mazur.katie@gmail.com
