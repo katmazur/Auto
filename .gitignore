@@ -1,0 +1,11 @@
+target/
+.project/
+.settings/
+.classpath/
+.idea
+*.iml
+*.log
+/build
+.DS_Store
+src/test/java/herokuapp/MyTest.java
+/src/test/java/herokuapp/MyTest1.java
