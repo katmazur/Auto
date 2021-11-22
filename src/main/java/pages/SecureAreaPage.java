@@ -14,13 +14,9 @@ public class SecureAreaPage extends Page {
     }
 
     public void assertLogin() {
-        try {
             assertEquals(
                     "Secure Area",
                     driver.findElement(By.cssSelector("#content h2")).getText()
             );
-        } catch (NoSuchElementException e) {
-            fail("unexpected");
         }
     }
-}

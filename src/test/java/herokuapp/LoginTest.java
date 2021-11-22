@@ -40,7 +40,7 @@ public class LoginTest {
     public void negativLoginTest() {
         //open Login Page
         loginPage.goToLoginPage();
-        loginPage.fillInCreadentials("tmsith", "SuperSecetPasword!");
+        loginPage.fillInCreadentials("tmsith", "SuperSecretPassword!");
         loginPage.clicOnLoginButton();
         loginPage.assertError();
 

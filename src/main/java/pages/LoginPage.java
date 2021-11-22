@@ -37,12 +37,10 @@ public class LoginPage extends Page {
     }
 
     public void assertError() {
-        try {
-            driver.findElement(By.cssSelector(".flash.error"));
-        } catch (NoSuchElementException e) {
-            fail("unexpected");
-        }
+        assertEquals(
+                "Your username is invalid!",
+                driver.findElement(By.cssSelector(".flash.error")).getText()
+        );
     }
-
 }
 
