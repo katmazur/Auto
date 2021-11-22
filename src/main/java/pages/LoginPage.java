@@ -38,7 +38,7 @@ public class LoginPage extends Page {
 
     public void assertError() {
         assertEquals(
-                "Your username is invalid!",
+                "Your username is invalid!\n×",
                 driver.findElement(By.cssSelector(".flash.error")).getText()
         );
     }
