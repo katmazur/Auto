@@ -42,5 +42,6 @@ public class LoginPage extends Page {
                 driver.findElement(By.cssSelector(".flash.error")).getText()
         );
     }
+
 }
 

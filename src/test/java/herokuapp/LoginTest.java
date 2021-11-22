@@ -43,6 +43,5 @@ public class LoginTest {
         loginPage.fillInCreadentials("tmsith", "SuperSecretPassword!");
         loginPage.clicOnLoginButton();
         loginPage.assertError();
-
     }
 }
