@@ -7,8 +7,9 @@ This is the web test automation project for testing http://the-internet.herokuap
 Project has a test class which represents the following scenario:
   
  Hovers page:
-  * hover each avatar and verify username text appeared underneath
- Login pages:
+  * hover each avatar and verify username text appeared underneath 
+
+  Login pages:
   * fill in correct/ incorrect credentials and verify if the login in process is successful
 
 
@@ -31,5 +32,6 @@ Project has a test class which represents the following scenario:
 
 ## Contributors
 
-Violeta Abramova abramova.violetta@gmail.com 
+Violeta Abramova abramova.violetta@gmail.com
+
 Ekaterina Mazur mazur.katie@gmail.com
