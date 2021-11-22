@@ -45,5 +45,4 @@ public class LoginTest {
         loginPage.assertError();
 
     }
-
 }

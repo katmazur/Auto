@@ -41,7 +41,6 @@ public class LoginPage extends Page {
                 "Your username is invalid!",
                 driver.findElement(By.cssSelector(".flash.error")).getText()
         );
-
     }
 }
 

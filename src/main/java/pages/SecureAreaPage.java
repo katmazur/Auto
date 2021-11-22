@@ -19,5 +19,4 @@ public class SecureAreaPage extends Page {
                     driver.findElement(By.cssSelector("#content h2")).getText()
             );
         }
-
     }
