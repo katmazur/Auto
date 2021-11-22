@@ -30,3 +30,4 @@ Project has a test class which represents the following scenario:
 ## Contributors
 
 Violeta Abramova abramova.violetta@gmail.com
+Ekaterina Mazur mazur.katie@gmail.com
