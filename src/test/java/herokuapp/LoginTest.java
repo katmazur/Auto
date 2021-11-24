@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoginPage;
 import pages.SecureAreaPage;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class LoginTest {
     LoginPage loginPage;
@@ -26,22 +29,22 @@ public class LoginTest {
     }
 
     @Test
-    public void positivLoginTest() {
+    public void positiveLoginTest() {
         //open Login Page
         loginPage.goToLoginPage();
         loginPage.fillInCreadentials("tomsmith", "SuperSecretPassword!");
         SecureAreaPage secureAreaPage = loginPage.clicOnLoginButton();
-        secureAreaPage.assertLogin();
+        assertTrue(secureAreaPage.verifyLogin());
 
 
     }
 
     @Test
-    public void negativLoginTest() {
+    public void negativeLoginTest() {
         //open Login Page
         loginPage.goToLoginPage();
         loginPage.fillInCreadentials("tmsith", "SuperSecretPassword!");
         loginPage.clicOnLoginButton();
-        loginPage.assertError();
+        assertTrue(loginPage.verifyError());
     }
 }

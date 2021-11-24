@@ -36,11 +36,9 @@ public class LoginPage extends Page {
         return new SecureAreaPage(driver);
     }
 
-    public void assertError() {
-        assertEquals(
-                "Your username is invalid!\n×",
-                driver.findElement(By.cssSelector(".flash.error")).getText()
-        );
+    public boolean verifyError() {
+        String error = driver.findElement(By.id ("flash")).getText();
+        return error.contains("Your username is invalid!");
     }
 
 }

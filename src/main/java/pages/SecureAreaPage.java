@@ -1,11 +1,12 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import org.openqa.selenium.interactions.Actions;
+
+
 
 public class SecureAreaPage extends Page {
 
@@ -13,11 +14,10 @@ public class SecureAreaPage extends Page {
         super(driver);
     }
 
-    public void assertLogin() {
-            assertEquals(
-                    "Secure Area",
-                    driver.findElement(By.cssSelector("#content h2")).getText()
-            );
+
+    public boolean verifyLogin() {
+        String verification = driver.findElement(By.id ("flash")).getText();
+        return verification.contains("You logged into a secure area!");
         }
 
     }
